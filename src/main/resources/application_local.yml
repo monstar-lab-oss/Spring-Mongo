@@ -1,0 +1,17 @@
+server:
+  port: 80
+  error.include-message: always
+spring:
+  profiles:
+    active: dev
+  data:
+    mongodb:
+      database: userdb
+      uri: mongodb+srv://carmenmihaila:a5ZigqNQqOpBGvif@cluster0.hhiwoiv.mongodb.net/?retryWrites=true&w=majority
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    baseline-version: 0
+management:
+  health.enabled: true
+
